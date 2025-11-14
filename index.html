@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeHub - Stream Anime Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+<!-- Header -->
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <i class="fas fa-play-circle"></i>
+            AnimeHub
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#search">Browse</a></li>
+        </ul>
+        
+            <div class="nav-buttons">
+                <div class="search-bar" id="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search anime...">
+                </div>
+                <a href="login.html" class="btn btn-login">Log In</a>
+                <a href="register.html" class="btn btn-premium">Register</a>
+            </div>
+        
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Attack on Titan: The Final Season</h1>
+                <p>Eren and his friends battle against the Titans and uncover the dark secrets of their world in this epic conclusion to the series.</p>
+                <div class="hero-buttons">
+                    <a href="detail-aot.html" class="btn-watch">
+                        <i class="fas fa-play"></i>
+                        Watch Now
+                    </a>
+                    <a href="#" class="btn-info">
+                        <i class="fas fa-info-circle"></i>
+                        More Info
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Trending Section -->
+        <section class="trending">
+            <div class="section-header">
+                <h2 class="section-title">Trending Now</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            
+            <div class="anime-grid">
+                <div class="anime-card">
+                    <a href="detail-aot.html">
+                    <img src="https://cdn.myanimelist.net/images/anime/1517/100633l.jpg" alt="Attack on Titan" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Attack on Titan</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 9.0</span>
+                            <span>TV Series</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <a href="detail-kny.html">
+                    <img src="https://cdn.myanimelist.net/images/anime/1286/99889l.jpg" alt="Demon Slayer" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Demon Slayer</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 8.7</span>
+                            <span>TV Series</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://cdn.myanimelist.net/images/anime/1337/99013l.jpg" alt="Hunter x Hunter" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Hunter x Hunter</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 9.3</span>
+                            <span>TV Series</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://cdn.myanimelist.net/images/anime/1208/94745l.jpg" alt="My Hero Academia" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Full Metal Alchemist</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 9.1</span>
+                            <span>TV Series</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://cdn.myanimelist.net/images/anime/1244/138851.jpg" alt="One Piece" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">One Piece</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 8.7</span>
+                            <span>TV Series</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://cdn.myanimelist.net/images/anime/1988/113791l.jpg" alt="Gintama" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Gintama</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 9.0</span>
+                            <span>TV Series</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Popular This Season -->
+        <section class="trending">
+            <div class="section-header">
+                <h2 class="section-title">Popular This Season</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            
+            <div class="anime-grid" id="popular-anime">
+                <div class="anime-card">
+                    <img src="https://cdn.myanimelist.net/images/anime/1441/122795.jpg" alt="Spy x Family" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Spy x Family</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 8.5</span>
+                            <span>TV Series</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://cdn.myanimelist.net/images/anime/1015/138006l.jpg" alt="Dr. Stone" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Sousou no Frieren</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 9.2</span>
+                            <span>TV Series</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://cdn.myanimelist.net/images/anime/2/88336.jpg" alt="Black Clover" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Black Clover</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 8.1</span>
+                            <span>TV Series</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://cdn.myanimelist.net/images/anime/1830/118780.jpg" alt="The Promised Neverland" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">The Promised Neverland</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 8.4</span>
+                            <span>TV Series</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <img src="https://cdn.myanimelist.net/images/anime/1806/126216.jpg" alt="Chainsaw Man" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Chainsaw Man</h3>
+                        <div class="card-meta">
+                            <span class="card-rating"><i class="fas fa-star"></i> 8.4</span>
+                            <span>TV Series</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Categories -->
+        <section class="categories">
+            <div class="section-header">
+                <h2 class="section-title">Browse by Category</h2>
+            </div>
+            
+            <div class="category-list">
+                <a href="#" class="category-item">Action</a>
+                <a href="#" class="category-item">Adventure</a>
+                <a href="#" class="category-item">Comedy</a>
+                <a href="#" class="category-item">Drama</a>
+                <a href="#" class="category-item">Fantasy</a>
+                <a href="#" class="category-item">Horror</a>
+                <a href="#" class="category-item">Mystery</a>
+                <a href="#" class="category-item">Romance</a>
+                <a href="#" class="category-item">Sci-Fi</a>
+                <a href="#" class="category-item">Slice of Life</a>
+                <a href="#" class="category-item">Sports</a>
+                <a href="#" class="category-item">Supernatural</a>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AnimeHub</h3>
+                    <p>Stream your favorite anime shows and movies anytime, anywhere. Join our community of anime lovers today!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Browse</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Popular Anime</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Top Airing</a></li>
+                        <li><a href="#">Upcoming</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Device Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Copyright</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 AnimeHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+</html>
