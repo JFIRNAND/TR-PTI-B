@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episode 1 - AnimeHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Header Section -->
+        <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-play-circle"></i>
+                AnimeHub
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#search">Browse</a></li>
+            </ul>
+            
+            <div class="nav-buttons">
+                <div class="search-bar" id="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search anime...">
+                </div>
+                <a href="login.html" class="btn btn-login">Log In</a>
+                <a href="register.html" class="btn btn-premium">Register</a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    <!-- Watch Section -->
+    </header>
+    <section class="watch-section">
+        <div class="container">
+            <div class="watch-content">
+                <div class="video-container">
+                    <iframe src="https://drive.google.com/file/d/1As2sBZhzW75-wJ3m0UCOwR8IQ2byqRkS/preview" allow="autoplay" sandbox="allow-scripts allow-same-origin allow-forms" allowfullscreen></iframe>
+                </div>
+                <div class="episodes-sidebar">
+                    <h2>Episodes</h2>
+                    <div class="episodes-list">
+                        <div class="episode-item">
+                            <div class="episode-number">1</div>
+                            <div class="episode-info">
+                                <h3>Episode 1</h3>
+                                <p>I'm Luffy! The Man Who's Gonna Be King of the Pirates!</p>
+                            </div>
+                            <button class="btn btn-watch-episode active">Watching</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anime Description Section -->
+    <section class="anime-detail">
+        <div class="container">
+            <div class="anime-info">
+                <h1>One Piece</h1>
+                <div class="anime-meta">
+                    <span class="rating"><i class="fas fa-star"></i> 8.73
+</span>
+                    <span class="episodes">1 Episodes</span>
+                    <span class="status">Ongoing</span>
+                </div>
+                <p class="anime-synopsis">
+                   Barely surviving in a barrel after passing through a terrible whirlpool at sea, carefree Monkey D. Luffy ends up aboard a ship under attack by fearsome pirates. Despite being a naive-looking teenager, he is not to be underestimated. Unmatched in battle, Luffy is a pirate himself who resolutely pursues the coveted One Piece treasure and the King of the Pirates title that comes with it.
+
+The late King of the Pirates, Gol D. Roger, stirred up the world before his death by disclosing the whereabouts of his hoard of riches and daring everyone to obtain it. Ever since then, countless powerful pirates have sailed dangerous seas for the prized One Piece only to never return. Although Luffy lacks a crew and a proper ship, he is endowed with a superhuman ability and an unbreakable spirit that make him not only a formidable adversary but also an inspiration to many.
+
+As he faces numerous challenges with a big smile on his face, Luffy gathers one-of-a-kind companions to join him in his ambitious endeavor, together embracing perils and wonders on their once-in-a-lifetime adventure.
+            </p>
+                <div class="anime-details">
+                    <div class="detail-item">
+                        <strong>Studio:</strong>  Toei Animation
+                    </div>
+                    <div class="detail-item">
+                        <strong>Genre:</strong> Action, Adventure, Fantasy
+                    </div>
+                    <div class="detail-item">
+                        <strong>Released:</strong> 1999
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-add-list">
+                        <i class="fas fa-plus"></i>
+                        Add to List
+                    </button>
+                    <button class="btn btn-share">
+                        <i class="fas fa-share"></i>
+                        Share
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AnimeHub</h3>
+                    <p>Stream your favorite anime shows and movies anytime, anywhere.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 AnimeHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Auth Modals -->
+    <input type="radio" name="auth-modal" id="close-modal" class="modal-toggle" checked>
+    <input type="radio" name="auth-modal" id="login-modal" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="close-modal" class="modal-close">&times;</label>
+            <h2>Login</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email or Username</label>
+                    <input type="text" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="remember-me">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Login</button>
+            </form>
+            <div class="auth-divider">
+                <span>or continue with</span>
+            </div>
+            <div class="social-auth">
+                <button class="btn btn-social btn-google">
+                    <i class="fab fa-google"></i>
+                    Google
+                </button>
+                <button class="btn btn-social btn-facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                </button>
+            </div>
+            <p class="signup-link">Don't have an account? <label for="register-modal" class="signup-link">Sign up</label></p>
+        </div>
+    </div>
+
+    <input type="radio" name="auth-modal" id="register-modal" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="close-modal" class="modal-close">&times;</label>
+            <h2>Register</h2>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-username">Username</label>
+                    <input type="text" id="reg-username" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm-password">Confirm Password</label>
+                    <input type="password" id="reg-confirm-password" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="agree-terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Register</button>
+            </form>
+            <div class="auth-divider">
+                <span>or continue with</span>
+            </div>
+            <div class="social-auth">
+                <button class="btn btn-social btn-google">
+                    <i class="fab fa-google"></i>
+                    Google
+                </button>
+                <button class="btn btn-social btn-facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                </button>
+            </div>
+            <p class="signup-link">Already have an account? <label for="login-modal" class="signup-link">Log in</label></p>
+        </div>
+    </div>
+
+</body>
+</html>
