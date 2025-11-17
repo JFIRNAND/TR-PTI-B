@@ -835,7 +835,7 @@ footer {
     }
 
     .mobile-menu-btn {
-        display: block;
+        display: none;
     }
 
     .hero h1 {
@@ -871,8 +871,18 @@ footer {
 }
 
 @media (max-width: 576px) {
+    .header-container {
+        padding: 15px 20px;
+    }
+
     .hero {
-        padding: 50px 0;
+        padding: 20px 0;
+        min-height: 63vh;
+        background: linear-gradient(to top, rgba(16, 16, 16, 0.9), rgba(0, 0, 0, 0.05));
+    }
+
+    .hero-video {
+        height: 30vh;
     }
 
     .hero h1 {
@@ -889,6 +899,14 @@ footer {
 
     .card-image {
         height: 200px;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
     }
 
     .action-buttons {
@@ -1053,7 +1071,7 @@ footer {
     background: var(--gray);
 }
 
-/* Responsive Design for Watch Page */
+/* Watch Page REST */
 @media (max-width: 1200px) {
     .watch-content {
         flex-direction: column;
