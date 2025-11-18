@@ -160,8 +160,11 @@ header {
     justify-content: center;
     margin-bottom: 40px;
     overflow: hidden;
+    padding-top: 0px;
     padding-bottom: 30px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05) );
+    margin-top: -80px;
+    padding-top: 80px;
 }
 
 .hero-video {
@@ -876,13 +879,13 @@ footer {
     }
 
     .hero {
-        padding: 20px 0;
-        min-height: 63vh;
-        background: linear-gradient(to top, rgba(16, 16, 16, 0.9), rgba(0, 0, 0, 0.05));
+        padding: 50px 0;
+        min-height: 50vh;
+        background: linear-gradient(to top, rgba(28, 28, 28, 0.9), rgba(0, 0, 0, 0.05));
     }
 
     .hero-video {
-        height: 30vh;
+        height: 50vh;
     }
 
     .hero h1 {
