@@ -63,7 +63,7 @@ header {
 }
 
 .logo i {
-    margin-right: 10px;
+    margin-right: auto;
 }
 
 .nav-links {
@@ -918,7 +918,7 @@ footer {
     /* Show nav buttons (log in/register) on mobile */
     .nav-buttons {
         display: flex;
-        margin-left: 5px;
+        margin-left: auto;
         order: 2;
     }
     /* Smaller login and register buttons */
@@ -929,7 +929,7 @@ footer {
 
     /* Nav links and buttons container adjusted layout */
     .nav-links {
-        display: flex;
+        display: none;
         align-items: center;
         gap: 10px;
         order: 1;
