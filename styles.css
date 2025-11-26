@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary: #164872;
+    --primary: #0562ae;
     --secondary: #23252b;
     --dark: #0f1014;
     --light: #ffffff;
@@ -218,6 +218,14 @@ header {
 
 .btn-info i {
     margin-right: 8px;
+}
+
+.btn-info:hover {
+    background: rgba(231, 224, 224, 0.489);
+}
+
+.btn-watch:hover {
+    background: #e06510;
 }
 
 /* Section Styles */
