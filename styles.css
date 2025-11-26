@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary: #0562ae;
+    --primary: #0082be;
     --secondary: #23252b;
     --dark: #0f1014;
     --light: #ffffff;
@@ -875,11 +875,18 @@ footer {
 @media (max-width: 576px) {
     .header-container {
         padding: 15px 20px;
+        font-size: small;
     }
+
+    .logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
 
     .hero {
         padding: 50px 0;
-        min-height: 50vh;
+        min-height: 110vh;
         background: linear-gradient(to top, rgba(28, 28, 28, 0.9), rgba(0, 0, 0, 0.05));
     }
 
@@ -903,12 +910,41 @@ footer {
         height: 200px;
     }
 
-    .nav-buttons {
+    /* Hide search bar on mobile */
+    .search-bar {
         display: none;
     }
 
+    /* Show nav buttons (log in/register) on mobile */
+    .nav-buttons {
+        display: flex;
+        margin-left: 5px;
+        order: 2;
+    }
+    /* Smaller login and register buttons */
+    .nav-buttons .btn-login, .nav-buttons .btn-premium {
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+
+    /* Nav links and buttons container adjusted layout */
     .nav-links {
         display: flex;
+        align-items: center;
+        gap: 10px;
+        order: 1;
+    }
+
+    /* Make nav-links and nav-buttons remain side by side */
+    .header-container {
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Align browse link and buttons horizontally */
+    .nav-links li {
+        margin-left: 0;
     }
 
     .action-buttons {
@@ -1074,6 +1110,7 @@ footer {
 }
 
 /* Watch Page REST */
+
 @media (max-width: 1200px) {
     .watch-content {
         flex-direction: column;
