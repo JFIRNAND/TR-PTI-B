@@ -889,6 +889,7 @@ footer {
         padding: 50px 0;
         min-height: 100vh;
         background: linear-gradient(to top, rgba(28, 28, 28, 0.9), rgba(0, 0, 0, 0.05));
+        margin-top: -80px;
     }
 
     .hero-video {
