@@ -815,7 +815,7 @@ footer {
 
 /* Mobile Menu */
 .mobile-menu-btn {
-    display: none;
+    display: flex;
     background: none;
     border: none;
     color: var(--text-color);
@@ -825,8 +825,22 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-    .nav-links, .nav-buttons {
+    .nav-links {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .nav-buttons{
+        display: flex;
+        margin-left: auto;
+    }
+
+    .search-bar{
         display: none;
+    }
+
+    .logo{
+        margin-left: 26px;
     }
 
     .mobile-menu-btn {
