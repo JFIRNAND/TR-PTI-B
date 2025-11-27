@@ -504,6 +504,7 @@ header {
 }
 
 .checkmark {
+    display: none;
     width: 16px;
     height: 16px;
     border: 1px solid var(--border-color);
@@ -515,15 +516,6 @@ header {
 .checkbox-option input:checked + .checkmark {
     background: var(--primary);
     border-color: var(--primary);
-}
-
-.checkbox-option input:checked + .checkmark::after {
-    content: '✓';
-    position: absolute;
-    top: -2px;
-    left: 2px;
-    color: var(--light);
-    font-size: 12px;
 }
 
 .forgot-password {
