@@ -383,6 +383,8 @@ header {
     color: var(--light);
 }
 
+.mobile
+
 /* Ensure forms are scrollable on mobile */
 @media (max-width: 576px) {
     .auth-form {
