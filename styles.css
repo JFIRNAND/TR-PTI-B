@@ -383,59 +383,6 @@ header {
     color: var(--light);
 }
 
-.mobile-menu-btn {
-    display: none;
-    background: var(--primary);
-    color: var(--light);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.mobile-menu-btn:hover {
-    background: #e06510;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.mobile-menu-btn i {
-    font-size: 18px;
-}
-
-#menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    min-width: 150px;
-    z-index: 1000;
-}
-
-#menu li {
-    list-style: none;
-    margin: 0;
-}
-
-#menu a {
-    display: block;
-    padding: 12px 20px;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-#menu a:hover {
-    background: var(--primary);
-    color: var(--light);
-}
-
 /* Ensure forms are scrollable on mobile */
 @media (max-width: 576px) {
     .auth-form {
@@ -921,23 +868,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .header-container {
-        padding: 15px 20px;
-        font-size: small;
-        position: relative;
-    }
-
-    .logo {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-    .mobile-menu-btn {
-        display: flex;
-        order: 3;
-    }
-
     .hero {
         padding: 50px 0;
         min-height: 100vh;
