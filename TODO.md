@@ -1,0 +1,6 @@
+- [x] Remove the misplaced duplicate .mobile-menu-btn rule in styles.css
+- [x] Add proper styling for .mobile-menu-btn (padding, background, border-radius, hover effects)
+- [x] Add styles for #menu dropdown (position, background, list styling)
+- [x] Update mobile media query to show .mobile-menu-btn and position .header-container relatively
+- [x] Position the mobile-menu-btn on the right side of the register button in mobile view
+- [x] Fix JavaScript to properly toggle menu visibility
